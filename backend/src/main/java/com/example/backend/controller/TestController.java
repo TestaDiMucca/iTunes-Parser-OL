@@ -10,4 +10,9 @@ public class TestController {
     public String test() {
         return "Authorized access";
     }
+
+    @GetMapping("/ping")
+    public String ping() {
+        return "pong";
+    }
 }

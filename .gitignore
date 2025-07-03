@@ -1,0 +1,33 @@
+# Compiled class files
+*.class
+
+# Maven target directory
+/backend/target/
+
+# Logs
+*.log
+
+# SQLite database
+/backend/database.db
+
+# IntelliJ / Eclipse / VSCode project files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Node modules if any future frontend
+node_modules/
+
+# Generated files
+*.jar
+*.war
+*.ear
+
+# Test reports
+/backend/target/surefire-reports/

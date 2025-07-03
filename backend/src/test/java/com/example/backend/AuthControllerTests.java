@@ -60,4 +60,11 @@ public class AuthControllerTests {
                 .andExpect(status().isOk())
                 .andExpect(content().string("Authorized access"));
     }
+
+    @Test
+    public void testPingWithoutAuth() throws Exception {
+        mockMvc.perform(get("/ping"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("pong"));
+    }
 }
