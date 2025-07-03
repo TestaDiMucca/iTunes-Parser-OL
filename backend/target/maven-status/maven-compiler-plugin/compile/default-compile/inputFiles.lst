@@ -1,0 +1,12 @@
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/dto/AuthRequest.java
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/repository/UserRepository.java
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/controller/TestController.java
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/controller/AuthController.java
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/model/User.java
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/config/SecurityConfig.java
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/BackendApplication.java
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/security/CustomUserDetailsService.java
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/service/UserService.java
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/security/JwtUtil.java
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/dto/AuthResponse.java
+/Users/admin/Documents/GitHub/iTunes-Parser-OL/backend/src/main/java/com/example/backend/security/JwtAuthenticationFilter.java
