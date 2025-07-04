@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
+import AuthForm from "@/components/AuthForm";
+import Dashboard from "@/components/Dashboard";
+
+
+
 
 function App() {
-  return (
-    <main style={{ padding: "1rem" }}>
-      <h1>iTunes Parser</h1>
-      <p>Edit <code>src/App.tsx</code> and save to test HMR.</p>
-    </main>
-  );
+    const [token, setToken] = useState<string | null>(() => localStorage.getItem("token"));
+  const [authMode, setAuthMode] = useState<"login" | "register">("login");
+
+  const handleLogin = (t: string) => {
+    setToken(t);
+    localStorage.setItem("token", t);
+  };
+
+  const handleLogout = () => {
+    setToken(null);
+    localStorage.removeItem("token");
+    setAuthMode("login");
+  };
+
+  if (!token) {
+    return <AuthForm mode={authMode} onLogin={handleLogin} onSwitchMode={setAuthMode} />;
+  }
+
+  return <Dashboard token={token} onLogout={handleLogout} />;
 }
 
 export default App;
