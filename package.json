@@ -1,0 +1,13 @@
+{
+  "name": "itunes-parser-ol",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix frontend run dev\" \"mvn -f backend spring-boot:run\"",
+    "build": "npm --prefix frontend run build && mvn -f backend package",
+    "lint": "npm --prefix frontend run lint",
+    "format": "npm --prefix frontend run format"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
